@@ -18,24 +18,24 @@ spec:
         kinds: 
         - Pod
     mutate: 
-      overlay:
+      patchStrategicMerge:
         metadata:
           annotations:
             +(cluster-autoscaler.kubernetes.io/safe-to-evict): "true"
         spec:          
           volumes: 
-          - (emptyDir): {}
+          - <(emptyDir): {}
   - name: annotate-host-path
     match: 
       resources: 
         kinds: 
         - Pod
     mutate: 
-      overlay:
+      patchStrategicMerge:
         metadata:
           annotations:
             +(cluster-autoscaler.kubernetes.io/safe-to-evict): "true"
         spec:          
           volumes: 
-          - (hostPath):
-              path: "*"
+          - hostPath:
+              <(path): "*"
