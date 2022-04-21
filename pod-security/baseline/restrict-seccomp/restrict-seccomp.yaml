@@ -16,6 +16,7 @@ metadata:
 spec:
   background: true
   validationFailureAction: audit
+  failurePolicy: Ignore
   rules:
     - name: check-seccomp
       match:
