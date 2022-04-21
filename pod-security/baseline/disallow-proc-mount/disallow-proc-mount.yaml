@@ -16,6 +16,7 @@ metadata:
       server.
 spec:
   validationFailureAction: audit
+  failurePolicy: Ignore
   background: true
   rules:
     - name: check-proc-mount
