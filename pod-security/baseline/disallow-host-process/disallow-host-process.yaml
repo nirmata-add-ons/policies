@@ -16,6 +16,7 @@ metadata:
       the `hostProcess` field, if present, is set to `false`.
 spec:
   validationFailureAction: audit
+  failurePolicy: Ignore
   background: true
   rules:
     - name: host-process-containers
