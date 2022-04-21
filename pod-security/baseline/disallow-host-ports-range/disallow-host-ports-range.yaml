@@ -16,6 +16,7 @@ metadata:
       field is set to one in the designated list. 
 spec:
   validationFailureAction: audit
+  failurePolicy: Ignore
   background: true
   rules:
     - name: host-port-range
