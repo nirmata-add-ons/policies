@@ -14,6 +14,7 @@ metadata:
       ensures that the `seLinuxOptions` field is undefined.
 spec:
   validationFailureAction: audit
+  failurePolicy: Ignore
   background: true
   rules:
     - name: selinux-type
