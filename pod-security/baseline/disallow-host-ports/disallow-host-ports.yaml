@@ -15,6 +15,7 @@ metadata:
       field is unset or set to `0`. 
 spec:
   validationFailureAction: audit
+  failurePolicy: Ignore
   background: true
   rules:
     - name: host-ports-none
