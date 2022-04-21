@@ -16,6 +16,7 @@ metadata:
       fields which make use of these host namespaces are unset or set to `false`.
 spec:
   validationFailureAction: audit
+  failurePolicy: Ignore
   background: true
   rules:
     - name: host-namespaces
