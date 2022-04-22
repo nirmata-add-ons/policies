@@ -1,0 +1,16 @@
+resources:
+  - ../testpolicies/disallow_latest_tag/disallow_latest_tag.yaml
+  - ../testpolicies/require_labels/require_labels.yaml
+  - ../testpolicies/require_pod_requests_limits/require_pod_requests_limits.yaml
+  - ../testpolicies/require_probes/require_probes.yaml
+  - ../testpolicies/require_ro_rootfs/require_ro_rootfs.yaml
+  - ../testpolicies/restrict-service-external-ips/restrict-service-external-ips.yaml
+  - ../testpolicies/restrict_node_port/restrict_node_port.yaml
+
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/failurePolicy
+        value: Ignore
+    target:
+      kind: ClusterPolicy
