@@ -4,6 +4,8 @@ resources:
   - disallow-empty-ingress-host/disallow_empty_ingress_host.yaml
   - disallow_cri_sock_mount/disallow_cri_sock_mount.yaml
   - disallow_default_namespace/disallow_default_namespace.yaml
+  - disallow_helm_tiller/disallow_helm_tiller.yaml
+  - disallow_latest_tag/disallow_latest_tag.yaml
 
 
 patches:
