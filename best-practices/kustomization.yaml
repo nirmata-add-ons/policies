@@ -9,6 +9,7 @@ resources:
   - require_labels/require_labels.yaml
   - require_pod_requests_limits/require_pod_requests_limits.yaml
   - require_probes/require_probes.yaml
+  - nginx-custom-snippets/disallow-custom-snippets.yaml
 
 
 patches:
