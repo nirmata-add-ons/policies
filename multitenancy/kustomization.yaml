@@ -1,3 +1,11 @@
 resources:
 - add-roles.yaml
 - add-network-policy.yaml
+
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/failurePolicy
+        value: Ignore
+    target:
+      kind: ClusterPolicy
