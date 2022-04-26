@@ -11,6 +11,7 @@ resources:
   - require_probes/require_probes.yaml
   - nginx-custom-snippets/disallow-custom-snippets.yaml
   - require_drop_all/require_drop_all.yaml
+  - require_drop_cap_net_raw/require_drop_cap_net_raw.yaml
 
 
 patches:
