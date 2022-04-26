@@ -1,6 +1,6 @@
 resources:
-- add-roles.yaml
-- add-network-policy.yaml
+  - add-roles.yaml
+  - add-network-policy.yaml
 
 patches:
   - patch: |-
