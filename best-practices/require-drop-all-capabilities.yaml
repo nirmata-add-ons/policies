@@ -16,23 +16,14 @@ spec:
         kinds:
         - Pod
     validate:
-      message: "All capabilities should be dropped with only those required added back."
+      message: "All capabilities should be dropped with only those required added back. The capabilities.drop[] field must specify only ALL and no others."
       pattern:
         spec:
           containers:
           - securityContext:
               capabilities:
                 drop: ["ALL"]
-  - name: check-init-containers
-    match:
-      resources:
-        kinds:
-        - Pod
-    validate:
-      message: "All capabilities should be dropped with only those required added back."
-      pattern:
-        spec:
-          initContainers:
+          =(initContainers):
           - securityContext:
               capabilities:
                 drop: ["ALL"]
