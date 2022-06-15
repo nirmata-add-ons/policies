@@ -1,0 +1,10 @@
+resources:
+  - baseline/disallow-capabilities/disallow-capabilities.yaml
+
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/failurePolicy
+        value: Ignore
+    target:
+      kind: ClusterPolicy
