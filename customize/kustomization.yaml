@@ -1,5 +1,10 @@
 resources:
-  - baseline/disallow-capabilities/disallow-capabilities.yaml
+  - disallow_latest_tag.yaml
+  - require_labels.yaml
+  - require_pod_requests_limits.yaml
+  - require_probes.yaml
+  - require_ro_rootfs.yaml
+  - restrict-service-external-ips.yaml
 
 patches:
   - patch: |-
