@@ -15,7 +15,6 @@ metadata:
       do not use the `NodePort` type.
 spec:
   validationFailureAction: audit
-  failurePolicy: Ignore
   background: true
   rules:
   - name: validate-nodeport
