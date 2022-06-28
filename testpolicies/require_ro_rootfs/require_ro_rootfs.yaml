@@ -15,7 +15,6 @@ metadata:
       with `readOnlyRootFilesystem: true`.
 spec:
   validationFailureAction: audit
-  failurePolicy: Ignore
   background: true
   rules:
   - name: validate-readOnlyRootFilesystem
