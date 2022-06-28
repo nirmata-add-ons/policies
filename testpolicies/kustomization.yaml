@@ -5,7 +5,7 @@ resources:
   - require_probes/require_probes.yaml
   - require_ro_rootfs/require_ro_rootfs.yaml
   - restrict-service-external-ips/restrict-service-external-ips.yaml
-  - restrict_node_port/restrict_node_port.yaml
+  
   
   
 patches:
