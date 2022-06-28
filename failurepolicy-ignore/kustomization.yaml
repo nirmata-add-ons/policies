@@ -6,3 +6,13 @@ resources:
   - ../testpolicies/require_ro_rootfs/require_ro_rootfs.yaml
   - ../testpolicies/restrict-service-external-ips/restrict-service-external-ips.yaml
   - ../testpolicies/restrict_node_port/restrict_node_port.yaml
+  
+  
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/failurePolicy
+        value: Ignore
+    target:
+      kind: ClusterPolicy 
+  
