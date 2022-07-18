@@ -1,5 +1,4 @@
 resources:
-  - disallow_cri_sock_mount/disallow_cri_sock_mount.yaml
   - check-node-for-cve-2022-0185.yaml
 #  - disallow-custom-snippets.yaml
   - mitigate_log4shell.yaml
