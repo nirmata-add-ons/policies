@@ -14,3 +14,12 @@ resources:
   - restricted/require-run-as-non-root-user/require-run-as-non-root-user.yaml
   - restricted/require-run-as-nonroot/require-run-as-nonroot.yaml  
   - restricted/restrict-volume-types/restrict-volume-types.yaml
+  
+  
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/validationFailureAction
+        value: audit
+    target:
+      kind: ClusterPolicy
