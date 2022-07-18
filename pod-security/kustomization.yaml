@@ -9,10 +9,8 @@ resources:
   - baseline/disallow-selinux/disallow-selinux.yaml
   - baseline/restrict-apparmor-profiles/restrict-apparmor-profiles.yaml
   - baseline/restrict-seccomp/restrict-seccomp.yaml
-  - baseline/restrict-sysctls/restrict-sysctls.yaml
-  - restricted/disallow-capabilities-strict/disallow-capabilities-strict.yaml
+  - baseline/restrict-sysctls/restrict-sysctls.yaml  
   - restricted/disallow-privilege-escalation/disallow-privilege-escalation.yaml
   - restricted/require-run-as-non-root-user/require-run-as-non-root-user.yaml
-  - restricted/require-run-as-nonroot/require-run-as-nonroot.yaml
-  - restricted/restrict-seccomp-strict/restrict-seccomp-strict.yaml
+  - restricted/require-run-as-nonroot/require-run-as-nonroot.yaml  
   - restricted/restrict-volume-types/restrict-volume-types.yaml
