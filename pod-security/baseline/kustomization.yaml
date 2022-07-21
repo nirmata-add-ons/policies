@@ -11,3 +11,4 @@ resources:
   - restrict-apparmor-profiles/restrict-apparmor-profiles.yaml
   - restrict-seccomp/restrict-seccomp.yaml
   - restrict-sysctls/restrict-sysctls.yaml
+  
