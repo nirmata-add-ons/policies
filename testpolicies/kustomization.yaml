@@ -11,8 +11,8 @@ resources:
 patches:
   - patch: |-
       - op: replace
-        path: /spec/failurePolicy
-        value: Ignore
+        path: /spec/validationFailureAction
+        value: enforce
     target:
       kind: ClusterPolicy 
   
