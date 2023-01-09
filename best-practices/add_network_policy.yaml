@@ -18,9 +18,10 @@ spec:
   rules:
   - name: default-deny
     match:
-      resources:
-        kinds:
-        - Namespace
+      any:
+      - resources:
+          kinds:
+          - Namespace
     generate:
       kind: NetworkPolicy
       name: default-deny
