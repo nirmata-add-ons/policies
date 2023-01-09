@@ -18,9 +18,10 @@ spec:
   rules:
   - name: require-image-tag
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
     validate:
       message: "An image tag is required."
       pattern:
@@ -29,9 +30,10 @@ spec:
           - image: "*:*"
   - name: validate-image-tag
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
     validate:
       message: "Using a mutable image tag e.g. 'latest' is not allowed."
       pattern:
