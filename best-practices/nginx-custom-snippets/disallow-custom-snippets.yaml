@@ -17,8 +17,9 @@ spec:
   rules:
     - name: check-config-map
       match:
-        resources:
-          kinds:
+        any:
+        - resources:
+            kinds:
             - ConfigMap      
       validate:
         message: "ingress-nginx allow-snippet-annotations must be set to false"
@@ -27,8 +28,9 @@ spec:
             =(allow-snippet-annotations) : "false"
     - name: check-ingress-annotations
       match:
-        resources:
-          kinds:
+        any:
+        - resources:
+            kinds:
             - Ingress      
       validate:
         message: "ingress-nginx custom snippets are not allowed"
