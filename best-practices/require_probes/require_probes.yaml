@@ -22,9 +22,10 @@ spec:
   rules:
   - name: validate-livenessProbe-readinessProbe
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
     validate:
       message: "Liveness and readiness probes are required."
       pattern:
