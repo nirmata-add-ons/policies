@@ -14,9 +14,10 @@ spec:
   rules: 
   - name: annotate-empty-dir
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
     mutate:
       patchStrategicMerge:
         metadata:
@@ -27,9 +28,10 @@ spec:
           - <(emptyDir): {}
   - name: annotate-host-path
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
     mutate:
       patchStrategicMerge:
         metadata:
