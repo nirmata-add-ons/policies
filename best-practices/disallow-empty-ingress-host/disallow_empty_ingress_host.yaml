@@ -17,9 +17,10 @@ spec:
   rules:
     - name: disallow-empty-ingress-host
       match:
-        resources:
-          kinds:
-            - Ingress
+        any:
+        - resources:
+            kinds:
+              - Ingress
       validate:
         message: "The Ingress host name must be defined, not empty."
         deny:
