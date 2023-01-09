@@ -20,9 +20,10 @@ spec:
   rules:
   - name: validate-namespace
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
     validate:
       message: "Using 'default' namespace is not allowed."
       pattern:
@@ -30,12 +31,13 @@ spec:
           namespace: "!default"
   - name: validate-podcontroller-namespace
     match:
-      resources:
-        kinds:
-        - DaemonSet
-        - Deployment
-        - Job
-        - StatefulSet
+      any:
+      - resources:
+          kinds:
+          - DaemonSet
+          - Deployment
+          - Job
+          - StatefulSet
     validate:
       message: "Using 'default' namespace is not allowed for pod controllers."
       pattern:
