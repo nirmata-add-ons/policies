@@ -20,9 +20,10 @@ spec:
   rules:
   - name: validate-resources
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
     validate:
       message: "CPU and memory resource requests and limits are required."
       pattern:
