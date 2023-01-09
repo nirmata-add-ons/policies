@@ -16,9 +16,10 @@ spec:
   rules:
   - name: generate-resourcequota
     match:
-      resources:
-        kinds:
-        - Namespace
+      any:
+      - resources:
+          kinds:
+          - Namespace
     generate:
       kind: ResourceQuota
       name: default-resourcequota
@@ -33,9 +34,10 @@ spec:
             limits.memory: '16Gi'
   - name: generate-limitrange
     match:
-      resources:
-        kinds:
-        - Namespace
+      any:
+      - resources:
+          kinds:
+          - Namespace
     generate:
       kind: LimitRange
       name: default-limitrange
