@@ -18,9 +18,10 @@ spec:
   rules:
   - name: check-for-labels
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
     validate:
       message: "The label `app.kubernetes.io/name` is required."
       pattern:
