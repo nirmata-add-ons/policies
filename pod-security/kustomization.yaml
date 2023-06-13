@@ -23,3 +23,9 @@ patches:
         value: audit
     target:
       kind: ClusterPolicy
+  - patch: |-
+      - op: replace
+        path: /spec/background
+        value: false
+    target:
+      kind: ClusterPolicy 
