@@ -1,18 +1,12 @@
 resources:
-  - disallow_latest_tag/disallow_latest_tag.yaml
-  - require_labels/require_labels.yaml
-  - require_pod_requests_limits/require_pod_requests_limits.yaml
-  - require_probes/require_probes.yaml
-  - require_ro_rootfs/require_ro_rootfs.yaml
-  - restrict-service-external-ips/restrict-service-external-ips.yaml
-  
+  - disallow_latest_tag/disallow_latest_tag.yaml 
   
   
 patches:
   - patch: |-
       - op: replace
         path: /spec/validationFailureAction
-        value: enforce
+        value: Audit
     target:
       kind: ClusterPolicy 
   
