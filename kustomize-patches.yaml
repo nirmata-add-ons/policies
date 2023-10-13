@@ -1,0 +1,14 @@
+clusterPatches:
+- target:
+     kind: Cluster
+     labelSelector:
+         cluster-name: "cluster-001"
+  kustomizePatch: ./cluster-001/
+- target:
+     kind: Cluster
+     name: testcluster1
+  kustomizePatch: ./testcluster1/pod-security/
+- target:
+     kind: Cluster
+     name: testcluster2
+  kustomizePatch: ./testcluster2/pod-security/
