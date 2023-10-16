@@ -14,4 +14,17 @@ resources:
   - pod-security/restricted/require-run-as-non-root-user/require-run-as-non-root-user.yaml
   - pod-security/restricted/require-run-as-nonroot/require-run-as-nonroot.yaml
   - pod-security/restricted/restrict-volume-types/restrict-volume-types.yaml
+  - best-practices/disallow_cri_sock_mount/disallow_cri_sock_mount.yaml
+  - best-practices/disallow_default_namespace/disallow_default_namespace.yaml
+  - best-practices/disallow_helm_tiller/disallow_helm_tiller.yaml
+  - best-practices/disallow_latest_tag/disallow_latest_tag.yaml
+  - best-practices/require_labels/require_labels.yaml
+  - best-practices/require_pod_requests_limits/require_pod_requests_limits.yaml
+  - best-practices/require_probes/require_probes.yaml
+  - best-practices/nginx-custom-snippets/disallow-custom-snippets.yaml
+  - best-practices/require_drop_all/require_drop_all.yaml
+  - best-practices/require_drop_cap_net_raw/require_drop_cap_net_raw.yaml
+  - best-practices/add-ttl-jobs.yaml
+  - best-practices/add_safe_to_evict/add_safe_to_evict.yaml
+
 
