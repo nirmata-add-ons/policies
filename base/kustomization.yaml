@@ -26,5 +26,5 @@ resources:
   - best-practices/require_drop_cap_net_raw/require_drop_cap_net_raw.yaml
   - best-practices/add-ttl-jobs.yaml
   - best-practices/add_safe_to_evict/add_safe_to_evict.yaml
-
-
+  #- pod-security/kustomization.yaml
+  #- best-practices/kustomization.yaml

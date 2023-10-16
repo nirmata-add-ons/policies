@@ -6,9 +6,9 @@ clusterPatches:
   kustomizePatch: ./cluster-001/
 - target:
      kind: Cluster
-     name: testcluster1
-  kustomizePatch: ./testcluster1/pod-security/
+     name: testcluster2
+  kustomizePatch: ./testcluster2/
 - target:
      kind: Cluster
-     name: testcluster2
-  kustomizePatch: ./testcluster2/pod-security/
+     name: testcluster3
+  kustomizePatch: ./testcluster3/
