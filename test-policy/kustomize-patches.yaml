@@ -16,4 +16,3 @@ clusterPatches:
      kind: Cluster
      name: k8s-dcp-stg-01
   kustomizePatch: ./k8s-dcp-stg-01/
-

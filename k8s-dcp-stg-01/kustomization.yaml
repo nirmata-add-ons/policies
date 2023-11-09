@@ -1,0 +1,8 @@
+resources:
+- ../base/
+
+  #patchesStrategicMerge:
+  #- patches/patch-disallow-capabilities.yaml
+  #- patches/patch-disallow-host-namespaces.yaml
+  #- patches/patch-disallow-host-path.yaml
+
