@@ -3,4 +3,5 @@ resources:
 
 patchesStrategicMerge:
 - patches/patch-disallow-capabilities.yaml
+- patches/patch-host-path.yaml
 
