@@ -18,9 +18,17 @@ spec:
   rules:
   - name: require-image-tag
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
+    exclude:
+      any:
+      - resources:
+          namespaces:
+          - kube-system
+          - kyverno
+          - nirmata
     validate:
       message: "An image tag is required."
       pattern:
@@ -29,9 +37,17 @@ spec:
           - image: "*:*"
   - name: validate-image-tag
     match:
-      resources:
-        kinds:
-        - Pod
+      any:
+      - resources:
+          kinds:
+          - Pod
+    exclude:
+      any:
+      - resources:
+          namespaces:
+          - kube-system
+          - kyverno
+          - nirmata          
     validate:
       message: "Using a mutable image tag e.g. 'latest' is not allowed."
       pattern:
