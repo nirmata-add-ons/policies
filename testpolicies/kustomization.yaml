@@ -1,6 +1,6 @@
 resources:
   - disallow_latest_tag/disallow_latest_tag.yaml
-  - require_ro_rootfs/require_ro_rootfs.yaml.yaml
+  - require_ro_rootfs/require_ro_rootfs.yaml
   
   
 patches:
