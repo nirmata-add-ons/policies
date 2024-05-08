@@ -1,12 +1,13 @@
 resources:
-  - disallow_latest_tag/disallow_latest_tag.yaml 
+  - disallow_latest_tag/disallow_latest_tag.yaml
+  - require_ro_rootfs/require_ro_rootfs.yaml.yaml
   
   
 patches:
   - patch: |-
       - op: replace
         path: /spec/validationFailureAction
-        value: Audit
+        value: Enforce
     target:
       kind: ClusterPolicy 
   
