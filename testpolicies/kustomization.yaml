@@ -2,11 +2,11 @@ resources:
   - disallow_latest_tag/disallow_latest_tag.yaml 
   
   
-# patches:
-#   - patch: |-
-#       - op: replace
-#         path: /spec/validationFailureAction
-#         value: Enforce
-#     target:
-#       kind: ClusterPolicy 
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/validationFailureAction
+        value: Enforce
+    target:
+      kind: ClusterPolicy 
   
