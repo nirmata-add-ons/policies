@@ -6,7 +6,7 @@ patches:
   - patch: |-
       - op: replace
         path: /spec/validationFailureAction
-        value: Audit
+        value: Enforce
     target:
       kind: ClusterPolicy 
   
