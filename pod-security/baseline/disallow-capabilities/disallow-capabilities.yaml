@@ -30,7 +30,7 @@ spec:
         deny:
           conditions:
             all:
-            - key: "{{ request.object.spec.[ephemeralContainers, initContainers, containers][].securityContext.capabilities.add[] }}"
+            - key: "{{ request.object.spec.[ephemeralContainers, initContainers, containers][].securityContext.capabilities.add[].to_upper(@) || `[]` }}"
               operator: AnyNotIn
               value:
               - AUDIT_WRITE
